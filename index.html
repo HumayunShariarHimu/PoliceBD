@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="bn">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>BD Police OC Number | XvenoM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <style>
+    body {
+      font-family: "Courier New", monospace;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 28px;
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+    }
+
+    #search {
+      width: 90%;
+      max-width: 500px;
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      background: #111;
+      color: #fff;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+
+    .link-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .link-item {
+      background: linear-gradient(145deg, #111, #222);
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #444;
+      box-shadow: inset 0 0 5px #000, 0 0 10px rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .link-item:hover {
+      background: linear-gradient(145deg, #222, #333);
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .link-item p {
+      margin: 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .link-item strong {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      word-break: break-all;
+      display: inline-block;
+      margin-top: 5px;
+      padding: 3px 0;
+      border-bottom: 1px dashed #555;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #ccc;
+      border-bottom-color: #888;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      margin-top: 40px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>BD Police OC Number</h1>
+    <input type="text" id="search" placeholder="Search district, thana or OC name...">
+    <div id="links" class="link-list"></div>
+  </center>
+
+  <script>
+    async function loadData() {
+      try {
+        const res = await fetch("https://raw.githubusercontent.com/HumayunShariarHimu/PoliceBD/refs/heads/main/bd_police_oc_number.txt");
+        const data = await res.text();
+        const lines = data.split("\n").filter(line => line.trim() !== "");
+
+        const container = document.getElementById("links");
+        const searchInput = document.getElementById("search");
+
+        function render(filter = "") {
+          container.innerHTML = "";
+          const filtered = lines.filter(line => line.toLowerCase().includes(filter.toLowerCase()));
+
+          if (filtered.length === 0) {
+            container.innerHTML = "<p style='color:gray;'>No match found.</p>";
+            return;
+          }
+
+          filtered.forEach((line, index) => {
+            const div = document.createElement("div");
+            div.className = "link-item";
+            div.innerHTML = `
+              <p><strong>Number #${index + 1}</strong></p>
+              <p><a href="${line}" target="_blank">${line}</a></p>
+            `;
+            container.appendChild(div);
+          });
+        }
+
+        render();
+
+        searchInput.addEventListener("input", (e) => render(e.target.value));
+      } catch (err) {
+        document.getElementById("links").innerHTML = `<p style="color:gray;">Failed to load numbers.</p>`;
+        console.error("Data Load Error:", err);
+      }
+    }
+
+    loadData();
+  </script>
+  <br></br>
+  <center><p><a href="https://github.com/HumayunShariarHimu" style="color: #fff">Humayun Shariar Himu</a></p></center> 
+</body>
+</html>
