@@ -1,0 +1,31 @@
+অত্র প্রতিষ্ঠান এর সত্ত্বাধিকারী কিংবা দায়িত্বশীল হতে প্রজ্ঞাপনের অধীন "সুরক্ষা প্রত্যায়ন নিবন্ধন" আবেদন জাতীয় বাণিজ্য মন্ত্রণালয়ের ডাটাবেইজে গৃহিত হয়নি।
+তদুপরি প্রত্যায়ন নিবন্ধন আবেদন ফি পরিশোধপূর্বক প্রত্যায়ন সাবমিশন ফরম সঠিক সময়ে পূরণের জন্য অবগত করা হলো।
+উল্লেখ্য সোলালী ব্যাংক ই-চালান এর সার্ভার বিভ্রাট (চেক অন: https://billpay.sonalibank.com.bd/Challan/) থাকায় উক্ত সময়ে ব্র্যাক অনলাইন ব্যাংকিং অথবা "ব্র্যাক অনুদিত মোবাইল ব্যাংকিং" পরিসেবা "বিকাশ" হতে পেমেন্ট পূর্বক সঠিক ট্রানজেকশন আইডি বসিয়ে ফরম সাবমিশন এবং অনলাই সুরক্ষা প্রত্যায়ন সার্টিফিকেট গ্রহনের জন্য অবগত করা হলো।
+সার্ভারে অপ্রত্যায়িত শিল্প প্রতিষ্ঠানের ডিটেইলস জাতীয় বাণিজ্য মন্ত্রণালয়ের ডাটাবেইজ (সর্বশেষ গৃহিত আপডেট তথ্য অনুসারে Export Promotion Bureau Act-2015) হতে বিবৃত হলো:
+
+
+Circular Fashion Industries Ltd.	
+Company Information
+Address Information
+Final Informaiton
+Website	
+Date of Establishment	2021-11-29
+Factory Type	
+Type	Priority
+Woven	1
+No. of Employees	
+Management	Employee Male	Employee Female
+604	333	271
+No of Machines	659
+Production Capacity
+(Yearly in dozen)	300000
+Certifications	
+ISO...	SRM	SA.	Others
+Principal Exportable Product	Shirt ,Pant ,Jacket
+Annual Turnover	
+Year	US $
+
+
+
+ধন্যবাদ
+জাতীয় তথ্য বাতায়ন পোর্টাল 
